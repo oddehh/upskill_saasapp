@@ -16,11 +16,13 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
- 
+
+/* typography  styles */ 
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
+/* homepage background gradient */
 .home-callout, .navbar {
   background: #00c6ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
@@ -34,24 +36,15 @@ h1, h2, h3 {
   padding-bottom: 100px;
 }
 
+// nav styles
 .navbar {
   border: none;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
   color: white;
-}
-
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: white;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: white;
-  opacity: 0.75;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
